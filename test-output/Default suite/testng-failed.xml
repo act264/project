@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="il.co.yad2_new.yad2_auto_tests.AmazonTests">
+      <class name="tests.AmazonTests">
         <methods>
           <include name="_002_logInToAmazon"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- il.co.yad2_new.yad2_auto_tests.AmazonTests -->
+      </class> <!-- tests.AmazonTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -31,8 +31,8 @@ public class MyTests {
 	 */
 	@Test
 	public void test3() {
-		int a = 4;
-		int b = 5;
+	//	int a = 4;
+	//	int b = 5;
 		int result =7;
 
 		

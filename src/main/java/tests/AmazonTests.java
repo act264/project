@@ -1,4 +1,4 @@
-package il.co.yad2_new.yad2_auto_tests;
+package tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

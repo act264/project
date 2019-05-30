@@ -55,8 +55,7 @@ public class AmazonTests {
 	public void _002_logInToAmazon() {
 		
 		driver.get("http://amazon.com");
-		
-		
+				
 		Actions action = new Actions(driver);
 		WebElement helloSignInLink = driver.findElement(By.id("nav-link-accountList"));
 		action.moveToElement(helloSignInLink).build().perform();
@@ -66,14 +65,17 @@ public class AmazonTests {
 		driver.findElement(By.id("ap_password")).sendKeys("asdewr");
 		driver.findElement(By.id("signInSubmit")).click();
 		
-		WebElement warningMassageTitle = driver.findElement(By.xpath("//div[@id = 'auth-error-message-box']//h4"));
+		WebElement warningMassageTitle = driver.findElement(By.xpath("//div[@id = 'auth-warning-message-box']//h4"));
 		String warningMassageTitleText = warningMassageTitle.getText();
 		
-		Assert.assertEquals(warningMassageTitleText, "There was a problem" , "Wrong warning massage ");
+		Assert.assertEquals(warningMassageTitleText, "Important Message! || " , "Wrong warning massage ");
 
 
 		
 	
 	}
+	
+	
+	
 
 }

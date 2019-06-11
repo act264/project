@@ -68,7 +68,7 @@ public class AmazonTests {
 		WebElement warningMassageTitle = driver.findElement(By.xpath("//div[@id = 'auth-warning-message-box']//h4"));
 		String warningMassageTitleText = warningMassageTitle.getText();
 		
-		Assert.assertEquals(warningMassageTitleText, "Important Message! || " , "Wrong warning massage ");
+		Assert.assertEquals(warningMassageTitleText, "Important Message!hjkhjk" , "Wrong warning massage ");
 
 
 		
